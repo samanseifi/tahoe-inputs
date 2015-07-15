@@ -1,5 +1,6 @@
 % Read in text data from Tahoe output files
 %close all;
+clc
 clear all;
 format long;
 hold on
@@ -9,6 +10,8 @@ header = 12;    % number of lines at top of file
 numvals2 = 2;   % number of nodes(for example: for 2D 1x1 is 2, for 2D 3x3 is 4, for 3D 1x1 is 4)
 numfiles2 = 170;
 
+fileinital = input('.xml filmename? ', 's');
+
 
 % DE problem parameters
 epsilon = 1.0;
@@ -17,25 +20,25 @@ L = 1.0;    % length, height of 3D geometry
 H = 1.0;
 lambda = 1000.0;
 
-for i = 0:numfiles2-1
-    
+for i = 0:numfiles2-1    
     if (i < 10)
-        textfilename=['voltage100.io2.run.ps000' num2str(i)];
+        filename = strcat(fileinital, '.io2.run.ps000');
+        textfilename=[filename num2str(i)];
         fid = fopen(textfilename,'r');
-    else if (i > 9 && i < 100)
-        textfilename=['voltage100.io2.run.ps00' num2str(i)];
+    elseif (i > 9 && i < 100)
+        filename = strcat(fileinital, '.io2.run.ps00');
+        textfilename=[filename num2str(i)];
         fid = fopen(textfilename,'r');    
-        else if (i > 99 && i < 1000)
-            textfilename=['voltage100.io2.run.ps0' num2str(i)];
-            fid = fopen(textfilename,'r');
-            else if (i > 999)
-                textfilename=['voltage100.io2.run.ps' num2str(i)];
-                fid = fopen(textfilename,'r');
-                else
-                    blah = 0;
-                end
-            end
-        end
+    elseif (i > 99 && i < 1000)
+        filename = strcat(fileinital, '.io2.run.ps0');
+        textfilename=[filename num2str(i)];
+        fid = fopen(textfilename,'r');
+    elseif (i > 999)
+        filename = strcat(fileinital, '.io2.run.ps');
+        textfilename=[filename num2str(i)];
+        fid = fopen(textfilename,'r');
+    else
+        blah = 0;
     end
         
     % read the first 12 lines containing the header information
