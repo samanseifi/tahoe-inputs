@@ -8,8 +8,8 @@ hold on
 % file read parameters
 header = 12;    % number of lines at top of file
 numvals2 = 2;   % number of nodes(for example: for 2D 1x1 is 2, for 2D 3x3 is 4, for 3D 1x1 is 4)
-numfiles2 = 170;
 
+numfiles2 = input('number of files? ');
 fileinital = input('.xml filmename? ', 's');
 
 

@@ -2,12 +2,12 @@
 <tahoe author="hspark" compute_IC="false"
     geometry_file="../geometry/1x1.geom" output_format="Tahoe"
     title="Dielectric Elastomer Testing" xmlns:x0="http://www.w3.org/2001/XMLSchema">
-    <time num_steps="15000" output_inc="100" time_step="0.01">
+    <time num_steps="10100" output_inc="100" time_step="0.01">
         <schedule_function>
             <piecewise_linear>
                 <OrderedPair x="0" y="0"/>
-                <OrderedPair x="0.1" y="0"/>
-                <OrderedPair x="1000" y="999.9"/>
+                <OrderedPair x="1" y="0"/>
+                <OrderedPair x="100000" y="99999"/>
             </piecewise_linear>
         </schedule_function>
     </time>

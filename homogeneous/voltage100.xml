@@ -6,8 +6,8 @@
         <schedule_function>
             <piecewise_linear>
                 <OrderedPair x="0" y="0"/>
-                <OrderedPair x="10" y="0"/>
-                <OrderedPair x="1000" y="990"/>
+                <OrderedPair x="100" y="0"/>
+                <OrderedPair x="10000" y="9900"/>
             </piecewise_linear>
         </schedule_function>
     </time>
@@ -17,18 +17,18 @@
                 <String value="D_X"/>
                 <String value="D_Y"/>
             </dof_labels>
-            <kinematic_BC dof="1" node_ID="2" type="fixed"/>
-            <kinematic_BC dof="2" node_ID="3" type="fixed"/>
+            <kinematic_BC dof="2" node_ID="1" type="fixed"/>
+            <kinematic_BC dof="1" node_ID="1" type="fixed"/>
         </field>
         <field field_name="electric_scalar_potential" integrator="static">
             <dof_labels>
                 <String value="Psi"/>
             </dof_labels>
-            <kinematic_BC dof="1" node_ID="2" type="fixed"/>
-            <kinematic_BC dof="1" node_ID="4" schedule="1" type="u" value="0.02"/>
+            <kinematic_BC dof="1" node_ID="1" type="fixed"/>
+            <kinematic_BC dof="1" node_ID="3" schedule="1" type="u" value="0.02"/>
         </field>
         <history_node_ID_list>
-            <String value="4"/>
+            <String value="3"/>
         </history_node_ID_list>
     </nodes>
     <element_list>
@@ -43,7 +43,7 @@
                 <large_strain_material_2D>
                     <Dielectric_Elastomer_Q1P02D Nrig="5.0"
                         density="1.0" epsilon="1.0" gamma="100.0"
-                        lambda="1000.0" mu="1.0" t_0="1.0"/>
+                        lambda="1000.0" mu="1.0" t_0="100.0"/>
                 </large_strain_material_2D>
             </large_strain_element_block>
         </dielectric_elastomer_Q1P0Elastocapillary>
