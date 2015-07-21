@@ -7,7 +7,7 @@ hold on
 
 % file read parameters
 header = 12;    % number of lines at top of file
-numvals2 = 81;   % number of nodes(for example: for 2D 1x1 is 2, for 2D 3x3 is 4, for 3D 1x1 is 4)
+numvals2 = 41;   % number of nodes(for example: for 2D 1x1 is 2, for 2D 3x3 is 4, for 3D 1x1 is 4)
 
 numfiles2 = input('number of files? ');
 fileinital = input('.xml filmename? ', 's');
@@ -16,8 +16,8 @@ fileinital = input('.xml filmename? ', 's');
 % DE problem parameters
 epsilon = 1.0;
 mu = 5.0;
-L = 1.0;    % length, height of 3D geometry
-H = 1.0;
+L = 40.0;    % length, height of 3D geometry
+H = 4.0;
 lambda = 1000.0;
 
 for i = 0:numfiles2-1    
