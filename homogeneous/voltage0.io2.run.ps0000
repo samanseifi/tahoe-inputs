@@ -1,0 +1,20 @@
+
+ Group number. . . . . . . . . . . . . . . . . . = 2
+ Output ID . . . . . . . . . . . . . . . . . . . = 2
+ Print Step. . . . . . . . . . . . . . . . . . . = 0
+ Time. . . . . . . . . . . . . . . . . . . . . . = 1.000000000000e+00
+ Number of blocks. . . . . . . . . . . . . . . . = 1
+
+ Nodal data:
+ Number of nodal points. . . . . . . . . . . . . = 2
+ Number of values. . . . . . . . . . . . . . . . = 2
+
+   index    node                  Psi                F_Psi
+       1       1   1.000000000000e-02   5.000071564154e-03
+       2       2   1.000000000000e-02   5.000071564154e-03
+
+ Element data:
+ Block ID . . . . . .  . . . . . . . . . . . . . = 2
+ Number of elements. . . . . . . . . . . . . . . = 0
+ Number of values. . . . . . . . . . . . . . . . = 0
+
