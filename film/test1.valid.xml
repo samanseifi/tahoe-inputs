@@ -4,8 +4,8 @@
               title='Dielectric Elastomer Testing'
              author='hspark'
     geometry_format='automatic'
-      geometry_file='../geometry/80x4.geom'
-      output_format='Tahoe'
+      geometry_file='../geometry/8x8.geom'
+      output_format='ExodusII'
  restart_output_inc='0'
          echo_input='false'
             logging='moderate'
@@ -13,14 +13,22 @@
 	<time
 	       scaling='linear'
 	     init_time='0.000000e+00'
-	     num_steps='300000'
-	    output_inc='100'
+	     num_steps='100'
+	    output_inc='10'
 	 max_step_cuts='0'
 	     time_step='1.000000e-02'>
 		<schedule_function>
-			<linear_function
-			 a='1.000000e+00'
-			 b='0.000000e+00'/>
+			<piecewise_linear>
+				<OrderedPair
+				 x='0.000000e+00'
+				 y='0.000000e+00'/>
+				<OrderedPair
+				 x='1.000000e+01'
+				 y='0.000000e+00'/>
+				<OrderedPair
+				 x='1.000000e+05'
+				 y='9.999000e+04'/>
+			</piecewise_linear>
 		</schedule_function>
 	</time>
 	<nodes>
@@ -37,24 +45,12 @@
 			</dof_labels>
 			<kinematic_BC
 			  node_ID='1'
-			      dof='1'
-			     type='fixed'
-			 schedule='0'
-			    value='0.000000e+00'/>
-			<kinematic_BC
-			  node_ID='1'
 			      dof='2'
 			     type='fixed'
 			 schedule='0'
 			    value='0.000000e+00'/>
 			<kinematic_BC
-			  node_ID='2'
-			      dof='1'
-			     type='fixed'
-			 schedule='0'
-			    value='0.000000e+00'/>
-			<kinematic_BC
-			  node_ID='4'
+			  node_ID='1'
 			      dof='1'
 			     type='fixed'
 			 schedule='0'
@@ -115,21 +111,29 @@
 					       epsilon='1.000000e+00'
 					          Nrig='5.000000e+00'
 					        lambda='1.000000e+03'
-					         gamma='0.000000e+00'
-					           t_0='0.000000e+00'/>
+					         gamma='1.000000e+01'
+					           t_0='1.000000e+01'/>
 				</large_strain_material_2D>
 			</large_strain_element_block>
+			<passivated_surface_ID_list>
+				<String
+				 value='1'/>
+				<String
+				 value='2'/>
+				<String
+				 value='3'/>
+			</passivated_surface_ID_list>
 		</dielectric_elastomer_Q1P0Elastocapillary>
 	</element_list>
 	<nonlinear_solver
 	               print_eqnos='false'
 	                check_code='no_check'
 	    check_LHS_perturbation='1.000000e-08'
-	            max_iterations='500'
+	            max_iterations='20'
 	            min_iterations='0'
 	 reform_tangent_iterations='1'
-	             abs_tolerance='1.000000e-06'
-	             rel_tolerance='1.000000e-08'
+	             abs_tolerance='1.000000e-07'
+	             rel_tolerance='1.000000e-09'
 	      divergence_tolerance='1.000000e+10'
 	          quick_solve_iter='6'
 	         quick_solve_count='3'
