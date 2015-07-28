@@ -14,7 +14,10 @@
 2	5
 3	81
 4	5
-0  # number of side sets
+3   # number of side sets
+# [ID] [assoc elem block] [ns]
+1	1	4
+2	1	4
 # end dimensions
 *nodesets
 *set
@@ -31,6 +34,18 @@
 1  2  3  4  5  
 # end node sets
 *sidesets
+*set
+4
+1	4 
+81 	4
+161 	4
+241 	4
+*set
+4
+80	2 
+160 	2
+240 	2
+320 	2
 *elements
 *set
 320  # number of elements
