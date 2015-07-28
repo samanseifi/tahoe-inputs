@@ -5,7 +5,7 @@
              author='hspark'
     geometry_format='automatic'
       geometry_file='../geometry/80x4.geom'
-      output_format='Tahoe'
+      output_format='ExodusII'
  restart_output_inc='0'
          echo_input='false'
             logging='moderate'

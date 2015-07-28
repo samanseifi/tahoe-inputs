@@ -4686,7 +4686,7 @@
 		</xsd:simpleType>
 	</xsd:attribute>
 	<xsd:attribute name='CTE' default='0.000000e+00' type='xsd:double'/>
-	<xsd:attribute name='max_iteration' default='9373624' type='xsd:integer'/>
+	<xsd:attribute name='max_iteration' default='-660748360' type='xsd:integer'/>
 </xsd:complexType>
 </xsd:element>
 

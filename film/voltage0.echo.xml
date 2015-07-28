@@ -4,7 +4,7 @@
         author='hspark'
     compute_IC='false'
  geometry_file='../geometry/80x4.geom'
- output_format='Tahoe'
+ output_format='ExodusII'
          title='Dielectric Elastomer Testing'
       xmlns:x0='http://www.w3.org/2001/XMLSchema'>
 	<time
