@@ -88,12 +88,11 @@
 		</history_node_ID_list>
 	</nodes>
 	<element_list>
-		<dielectric_elastomer_Q1P0Elastocapillary
+		<dielectric_elastomer_Q1P02D
 		          field_name='displacement'
 		           mass_type='lumped_mass'
 		      eigenvalue_inc='0'
-		 electric_field_name='electric_scalar_potential'
-		      output_surface='false'>
+		 electric_field_name='electric_scalar_potential'>
 			<quadrilateral
 			 num_ip='4'/>
 			<solid_element_nodal_output
@@ -119,7 +118,7 @@
 					           t_0='0.000000e+00'/>
 				</large_strain_material_2D>
 			</large_strain_element_block>
-		</dielectric_elastomer_Q1P0Elastocapillary>
+		</dielectric_elastomer_Q1P02D>
 	</element_list>
 	<nonlinear_solver
 	               print_eqnos='false'

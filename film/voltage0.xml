@@ -30,7 +30,7 @@
         </history_node_ID_list>
     </nodes>
     <element_list>
-        <dielectric_elastomer_Q1P0Elastocapillary
+        <dielectric_elastomer_Q1P02D
             electric_field_name="electric_scalar_potential"
             field_name="displacement" mass_type="lumped_mass">
             <quadrilateral/>
@@ -45,7 +45,7 @@
                         lambda="1000.0" mu="1.0" t_0="0.000"/>
                 </large_strain_material_2D>
             </large_strain_element_block>
-        </dielectric_elastomer_Q1P0Elastocapillary>
+        </dielectric_elastomer_Q1P02D>
     </element_list>
     <nonlinear_solver abs_tolerance="1.0e-6"
         check_LHS_perturbation="1.0E-8" check_code="no_check"

@@ -4,7 +4,7 @@
               title='Dielectric Elastomer Testing'
              author='hspark'
     geometry_format='automatic'
-      geometry_file='../geometry/two_squares.geom'
+      geometry_file='../geometry/80x4.geom'
       output_format='ExodusII'
  restart_output_inc='0'
          echo_input='false'
@@ -13,8 +13,8 @@
 	<time
 	       scaling='linear'
 	     init_time='0.000000e+00'
-	     num_steps='100000'
-	    output_inc='10'
+	     num_steps='8600'
+	    output_inc='100'
 	 max_step_cuts='0'
 	     time_step='1.000000e-02'>
 		<schedule_function>
@@ -130,6 +130,8 @@
 			<passivated_surface_ID_list>
 				<String
 				 value='1'/>
+				<String
+				 value='2'/>
 			</passivated_surface_ID_list>
 		</dielectric_elastomer_Q1P0Elastocapillary>
 	</element_list>
