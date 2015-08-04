@@ -33,6 +33,7 @@
 1  2  3  4  5  
 # end node sets
 *sidesets
+*set
 4
 1	4
 161	4
