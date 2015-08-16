@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tahoe author="hspark" compute_IC="false"
-    geometry_file="../geometry/240x4.geom" output_format="ExodusII"
+    geometry_file="../geometry/160x4.geom" output_format="ExodusII"
     title="Dielectric Elastomer Testing" xmlns:x0="http://www.w3.org/2001/XMLSchema">
-    <time num_steps="100000" output_inc="100" time_step="0.01">
+    <time num_steps="1000000" output_inc="100" time_step="0.01">
         <schedule_function>
             <piecewise_linear>
                 <OrderedPair x="0" y="0"/>
                 <OrderedPair x="1" y="0"/>
-                <OrderedPair x="100000" y="99999"/>
+                <OrderedPair x="1000000" y="999999"/>
             </piecewise_linear>
         </schedule_function>
     </time>
@@ -17,10 +17,12 @@
                 <String value="D_X"/>
                 <String value="D_Y"/>
             </dof_labels>
-            <kinematic_BC dof="2" node_ID="1" type="fixed"/>
             <kinematic_BC dof="1" node_ID="1" type="fixed"/>
+            <kinematic_BC dof="2" node_ID="1" type="fixed"/>
             <kinematic_BC dof="1" node_ID="2" type="fixed"/>
+	    <kinematic_BC dof="2" node_ID="2" type="fixed"/>
             <kinematic_BC dof="1" node_ID="4" type="fixed"/>
+	    <kinematic_BC dof="2" node_ID="4" type="fixed"/>
         </field>
         <field field_name="electric_scalar_potential" integrator="static">
             <dof_labels>
