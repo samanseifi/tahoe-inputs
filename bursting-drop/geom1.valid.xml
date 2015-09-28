@@ -4,7 +4,7 @@
               title='Dielectric Elastomer Testing'
              author='jinwang'
     geometry_format='automatic'
-      geometry_file='../geometry/geom1New/airhole1.geom'
+      geometry_file='../geometry/hole/geom1New/airhole1.geom'
       output_format='ExodusII'
  restart_output_inc='0'
          echo_input='false'
@@ -13,7 +13,7 @@
 	<time
 	       scaling='linear'
 	     init_time='0.000000e+00'
-	     num_steps='4000'
+	     num_steps='10000'
 	    output_inc='10'
 	 max_step_cuts='0'
 	     time_step='1.000000e-02'>
@@ -50,25 +50,13 @@
 			 schedule='0'
 			    value='0.000000e+00'/>
 			<kinematic_BC
-			  node_ID='3'
+			  node_ID='6'
 			      dof='1'
 			     type='fixed'
 			 schedule='0'
 			    value='0.000000e+00'/>
 			<kinematic_BC
-			  node_ID='3'
-			      dof='2'
-			     type='fixed'
-			 schedule='0'
-			    value='0.000000e+00'/>
-			<kinematic_BC
-			  node_ID='4'
-			      dof='1'
-			     type='fixed'
-			 schedule='0'
-			    value='0.000000e+00'/>
-			<kinematic_BC
-			  node_ID='4'
+			  node_ID='6'
 			      dof='2'
 			     type='fixed'
 			 schedule='0'
@@ -106,7 +94,7 @@
 			      dof='1'
 			     type='u'
 			 schedule='1'
-			    value='1.000000e-01'/>
+			    value='0.000000e+00'/>
 		</field>
 	</nodes>
 	<element_list>
@@ -141,12 +129,6 @@
 					           t_0='1.000000e+00'/>
 				</large_strain_material_2D>
 			</large_strain_element_block>
-			<passivated_surface_ID_list>
-				<String
-				 value='4'/>
-				<String
-				 value='6'/>
-			</passivated_surface_ID_list>
 		</dielectric_elastomer_Q1P0Elastocapillary>
 	</element_list>
 	<nonlinear_solver

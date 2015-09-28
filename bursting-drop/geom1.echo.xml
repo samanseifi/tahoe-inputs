@@ -3,12 +3,12 @@
 <tahoe
         author='jinwang'
     compute_IC='false'
- geometry_file='../geometry/geom1New/airhole1.geom'
+ geometry_file='../geometry/hole/geom1New/airhole1.geom'
  output_format='ExodusII'
          title='Dielectric Elastomer Testing'
       xmlns:x0='http://www.w3.org/2001/XMLSchema'>
 	<time
-	  num_steps='4000'
+	  num_steps='10000'
 	 output_inc='10'
 	  time_step='0.01'>
 		<schedule_function>
@@ -41,19 +41,11 @@
 			    type='fixed'/>
 			<kinematic_BC
 			     dof='1'
-			 node_ID='3'
+			 node_ID='6'
 			    type='fixed'/>
 			<kinematic_BC
 			     dof='2'
-			 node_ID='3'
-			    type='fixed'/>
-			<kinematic_BC
-			     dof='1'
-			 node_ID='4'
-			    type='fixed'/>
-			<kinematic_BC
-			     dof='2'
-			 node_ID='4'
+			 node_ID='6'
 			    type='fixed'/>
 			<kinematic_BC
 			     dof='2'
@@ -79,7 +71,7 @@
 			  node_ID='3'
 			 schedule='1'
 			     type='u'
-			    value='0.1'/>
+			    value='0.0'/>
 		</field>
 	</nodes>
 	<element_list>
@@ -109,12 +101,6 @@
 					     t_0='1.0'/>
 				</large_strain_material_2D>
 			</large_strain_element_block>
-			<passivated_surface_ID_list>
-				<String
-				 value='4'/>
-				<String
-				 value='6'/>
-			</passivated_surface_ID_list>
 		</dielectric_elastomer_Q1P0Elastocapillary>
 	</element_list>
 	<nonlinear_solver
