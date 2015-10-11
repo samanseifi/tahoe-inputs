@@ -15,8 +15,8 @@ Translate
        5      17
        6       7
 2 # number of side sets
-	1	1	16
-	2	1	16
+1		1		16
+2		1		16
 *nodesets
 *set
 airhole05.geom.ns0
