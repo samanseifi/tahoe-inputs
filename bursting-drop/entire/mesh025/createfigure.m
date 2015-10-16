@@ -1,4 +1,4 @@
-function createfigure(X1, Y1, X2, Y2, X3, Y3, X4, Y4, X5, Y5, X6, Y6)
+function createfigure(X1, Y1, X2, Y2, X3, Y3, X4, Y4, X5, Y5, X6, Y6, x_label, y_label)
 %CREATEFIGURE(X1,Y1,X2,Y2,X3,Y3,X4,Y4,X5,Y5,X6,Y6)
 %  X1:  vector of x data
 %  Y1:  vector of y data
@@ -58,10 +58,10 @@ plot(X6,Y6,'Parent',axes1,'MarkerSize',8,'Marker','square',...
     'DisplayName','$\gamma=5$');
 
 % Create xlabel
-xlabel('$E_{top}$','Interpreter','latex','FontSize',12);
+xlabel(x_label,'Interpreter','latex','FontSize',12);
 
 % Create ylabel
-ylabel('$E_{crirical}/E_{top}$','Interpreter','latex','FontSize',12);
+ylabel(y_label,'Interpreter','latex','FontSize',12);
 
 % Create legend
 legend1 = legend(axes1,'show');
