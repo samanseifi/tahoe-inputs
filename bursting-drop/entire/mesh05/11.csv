@@ -1,4 +1,4 @@
-"D_:0","D_:1","D_:2","s11","s22","s12","D1","D2","E1","E2","EMag","Psi","PedigreeNodeId","Result","E_field:0","E_field:1","E_field:2","vtkValidPointMask","Time","Point Coordinates:0","Point Coordinates:1","Point Coordinates:2"
+"D_:0","D_:1","D_:2","s11","s22","s12","D1","D2","E1","E2","EMag","Psi","PedigreeNodeId","Result","Gradients:0","Gradients:1","Gradients:2","vtkValidPointMask","Time","Point Coordinates:0","Point Coordinates:1","Point Coordinates:2"
 0,0,0,1.0803e-11,1.0763e-11,-2.347e-16,0,0,0,0,0,0,253,-0,0,0,0,1,0.1,-10,0,0
 0,0,0,2.9615e-06,2.951e-06,-3.23e-11,0,0,0,0,0,0,253,-0,0,0,0,1,0.2,-10,0,0
 0,0,0,0.0025681,0.0025589,-2.0785e-08,0,0,0,0,0,0,253,-0,0,0,0,1,0.3,-10,0,0
