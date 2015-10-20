@@ -1,0 +1,62 @@
+## /home/saman/Apps/Cubit/bin/clarox
+## Cubit Version 13.2
+## Cubit Build 48449
+## Revised 2012-08-02 11:48:03 -0600 (Thu, 02 Aug 2012)
+## Running 10/16/2015 11:30:34 AM
+## Command Options:
+## -warning = On
+## -information = On
+undo on
+create surface rectangle width 20 height 20 zplane
+create surface circle radius 2 zplane
+subtract 2 from 1
+webcut volume 1 xplane
+webcut volume 1 yplane
+delete volume 1
+delete volume 3
+body 4 size 0.25
+surface 7 scheme pave
+mesh surface 7
+nodeset 1 curve 7
+nodeset 2 curve 11
+nodeset 3 curve 21
+nodeset 4 curve 20
+nodeset 5 curve 22
+export abaqus "ah025.inp" dimension 2 overwrite
+surface 7 scheme circle fraction 0.5
+surface 7 scheme triprimitive
+delete mesh surface 7 propagate
+mesh surface 7
+delete mesh surface 7 propagate
+mesh surface 7
+surface 7 scheme circle fraction 0.5
+delete mesh surface 7 propagate
+mesh surface 7
+delete mesh surface 7 propagate
+mesh surface 7
+delete mesh surface 7 propagate
+mesh surface 7
+quality surface 7 relative size global
+quality surface 7 relative size global
+quality surface 7 scaled jacobian global
+delete mesh surface 7 propagate
+mesh surface 7
+reset
+create surface circle radius 27 zplane
+create surface circle radius 26 zplane
+undo
+create surface circle radius 23 zplane
+subtract 2 from 1
+webcut volume 1 xplane
+undo
+webcut volume 1 yplane
+delete volume 3
+undo
+delete volume 1
+mesh surface 5
+delete mesh surface 5 propagate
+surface 5 size auto factor 3
+mesh surface 5
+delete mesh surface 5 propagate
+surface 5 size auto factor 4
+mesh surface 5
