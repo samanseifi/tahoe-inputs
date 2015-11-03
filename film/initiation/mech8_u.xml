@@ -2,12 +2,11 @@
 <tahoe author="hspark" compute_IC="false"
     geometry_file="../../geometry/80x4.geom" output_format="ExodusII"
     title="Dielectric Elastomer Testing" xmlns:x0="http://www.w3.org/2001/XMLSchema">
-    <time num_steps="1000000" output_inc="10" time_step="0.01">
+    <time num_steps="1000000" output_inc="100" time_step="0.01">
         <schedule_function>
 				<piecewise_linear>
 					<OrderedPair x="0" y="0"/>
-					<OrderedPair x="8" y="0"/>
-					<OrderedPair x="1000000" y="999992"/>
+					<OrderedPair x="1000000" y="1000000"/>
 				</piecewise_linear>
         </schedule_function>
     </time>
@@ -33,7 +32,7 @@
         </history_node_ID_list>
     </nodes>
     <element_list>
-        <dielectric_elastomer_Q1P0Elastocapillary
+        <dielectric_elastomer_Q1P02D
             electric_field_name="electric_scalar_potential"
             field_name="displacement" mass_type="lumped_mass">
             <quadrilateral/>
@@ -45,19 +44,15 @@
                 </block_ID_list>
                 <large_strain_material_2D>
                     <Dielectric_Elastomer_Q1P02D Nrig="5.0"
-                        density="1.0" epsilon="1.0" gamma="8.0"
+                        density="1.0" epsilon="1.0" gamma="0.0"
                         lambda="1000.0" mu="1.0" t_0="8.0"/>
                 </large_strain_material_2D>
             </large_strain_element_block>
-            <passivated_surface_ID_list>
-                <String value="1"/>
-                <String value="2"/>
-            </passivated_surface_ID_list>
-        </dielectric_elastomer_Q1P0Elastocapillary>
+        </dielectric_elastomer_Q1P02D>
     </element_list>
     <nonlinear_solver abs_tolerance="1.0e-7"
         check_LHS_perturbation="1.0E-8" check_code="no_check"
         divergence_tolerance="1.0e+10" max_iterations="50" rel_tolerance="1.0e-9">
-        <SPOOLES_matrix/>
+        <SPOOLS_matrix/>
     </nonlinear_solver>
 </tahoe>
