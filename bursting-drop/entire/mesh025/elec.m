@@ -1,8 +1,8 @@
 close all
 
 % Data for no surface tension
-data01 = csvread('00.csv', 1);
-data00 = csvread('01.csv', 1);
+data01 = csvread('0000.csv', 1);
+data00 = csvread('0001.csv', 1);
 
 % Data for gamma=1
 data11 = csvread('10.csv', 1);
@@ -51,16 +51,17 @@ createfigure(X1, Y1, X2, Y2, X3, Y3, X4, Y4, X5, Y5, X6, Y6, '$E_{top}$', 'Crack
 %plot(sqrt(data01(:,16).^2+data01(:,15).^2), sqrt(data00(:,16).^2+data00(:,15).^2)./sqrt(data01(:,16).^2+data01(:,15).^2), '-b')
 %plot(sqrt(data11(:,16).^2+data11(:,15).^2), sqrt(data10(:,16).^2+data10(:,15).^2)./sqrt(data11(:,16).^2+data11(:,15).^2), '-r')
 %plot(sqrt(data21(:,16).^2+data21(:,15).^2), sqrt(data20(:,16).^2+data20(:,15).^2)./sqrt(data21(:,16).^2+data21(:,15).^2), '-k')
-% plot(sqrt(data31(:,16).^2+data31(:,15).^2), sqrt(data30(:,16).^2+data30(:,15).^2)./sqrt(data31(:,16).^2+data31(:,15).^2), '-y')
-% plot(sqrt(data41(:,16).^2+data41(:,15).^2), sqrt(data40(:,16).^2+data40(:,15).^2)./sqrt(data41(:,16).^2+data41(:,15).^2), '-g')
-% plot(sqrt(data51(:,16).^2+data51(:,15).^2), sqrt(data50(:,16).^2+data50(:,15).^2)./sqrt(data51(:,16).^2+data51(:,15).^2), '-c')
-% 
+%plot(sqrt(data31(:,16).^2+data31(:,15).^2), sqrt(data30(:,16).^2+data30(:,15).^2)./sqrt(data31(:,16).^2+data31(:,15).^2), '-y')
+%plot(sqrt(data41(:,16).^2+data41(:,15).^2), sqrt(data40(:,16).^2+data40(:,15).^2)./sqrt(data41(:,16).^2+data41(:,15).^2), '-g')
+%plot(sqrt(data51(:,16).^2+data51(:,15).^2), sqrt(data50(:,16).^2+data50(:,15).^2)./sqrt(data51(:,16).^2+data51(:,15).^2), '-c')
+
+
 % % Tahoe calculated electric field
-% figure
-% hold on
-% %plot(data01(:,11), data00(:,11)./data01(:,11), '-bo')
-% %plot(data11(:,11), data10(:,11)./data11(:,11), '-rs')
-% %plot(data51(:,11), data50(:,11)./data51(:,11), '-^g')
+figure
+hold on
+plot(-data01(:,16), data00(:,16)./data01(:,16), '-bo')
+plot(-data11(:,16), data10(:,16)./data11(:,16), '-rs')
+plot(-data51(:,16), data50(:,16)./data51(:,16), '-^g')
 % plot(sqrt(data01(:,9).^2+data01(:,10).^2), sqrt(data00(:,9).^2+data00(:,10).^2)./sqrt(data01(:,9).^2+data01(:,10).^2), '-bo')
 % plot(sqrt(data11(:,9).^2+data11(:,10).^2), sqrt(data10(:,9).^2+data10(:,10).^2)./sqrt(data11(:,9).^2+data11(:,10).^2), '-rs')
 % plot(sqrt(data51(:,9).^2+data51(:,10).^2), sqrt(data50(:,9).^2+data50(:,10).^2)./sqrt(data51(:,9).^2+data51(:,10).^2), '-^g')
