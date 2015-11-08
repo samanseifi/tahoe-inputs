@@ -1,4 +1,4 @@
-
+clear all
 
 % Data for no surface tension
 data00 = csvread('00.csv', 1);
@@ -22,8 +22,8 @@ data11 = csvread('11.csv', 1);
 
 
 % Data for gamma=5
-data50 = csvread('50.csv', 1);
-data51 = csvread('51.csv', 1);
+data50 = csvread('550.csv', 1);
+data51 = csvread('551.csv', 1);
 
 X1 = sqrt(data01(:,16).^2+data01(:,15).^2); Y1 = sqrt(data00(:,16).^2+data00(:,15).^2)./sqrt(data01(:,16).^2+data01(:,15).^2);
 X2 = sqrt(data11(:,16).^2+data11(:,15).^2); Y2 = sqrt(data10(:,16).^2+data10(:,15).^2)./sqrt(data11(:,16).^2+data11(:,15).^2);
