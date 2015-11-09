@@ -11,13 +11,13 @@
 		xlabel=$E_{top}\sqrt{\epsilon/\mu}$,
 		ylabel=$b/R_0$,
 		legend pos=north west,
-		cycle list name=exotic,
-		legend entries={$\gamma/\mu L=0$,$\gamma/\mu L=1$,$\gamma/\mu L=2$,$\gamma/\mu L=3$}]
+				cycle list name=exotic,
+		legend entries={$\gamma/\mu L=0$,$\gamma/\mu L=1$,$\gamma/\mu L=3$,$\gamma/\mu L=5$}]
 	\addplot+[mark repeat=3] table {crack/gamma1.dat};
 	\addplot+[mark repeat=3] table {crack/gamma2.dat};
-	\addplot+[mark repeat=3] table {crack/gamma3.dat};
+
 	\addplot+[mark repeat=3] table {crack/gamma4.dat};
-	\addplot+[mark repeat=3] table {crack/gamma5.dat};	
+	
 	\addplot+[mark repeat=3] table {crack/gamma6.dat};
 	\end{axis}
 \end{tikzpicture}
@@ -27,16 +27,17 @@
 \begin{tikzpicture}
 	\begin{axis}[
 		xmin=0,
-		ymin=0,
+		ymin=1,
 		xlabel=$E_{top}\sqrt{\epsilon/\mu}$,
 		ylabel=$E_{critical}/E_{top}$,
 		legend pos=south east,
-		legend entries={$\gamma=0$,$\gamma=1$,$\gamma=2$,$\gamma=3$}]
+				cycle list name=exotic,
+		legend entries={$\gamma/\mu L=0$,$\gamma/\mu L=1$,$\gamma/\mu L=3$,$\gamma/\mu L=5$}]
 	\addplot+[mark repeat=3] table {Efield/gamma1.dat};
 	\addplot+[mark repeat=3] table {Efield/gamma2.dat};
-	\addplot+[mark repeat=3] table {Efield/gamma3.dat};
+
 	\addplot+[mark repeat=3] table {Efield/gamma4.dat};
-		\addplot+[mark repeat=3] table {Efield/gamma5.dat};
+
 		\addplot+[mark repeat=3] table {Efield/gamma6.dat};
 	\end{axis}
 \end{tikzpicture}
