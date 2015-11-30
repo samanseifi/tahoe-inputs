@@ -1,0 +1,23 @@
+## /Applications/cubit_MAC_alpha/cubit_exe/cubitx.app/Contents/MacOS/cubitx
+## Cubit Version 10.0b
+## Cubit Build 959
+## Revised 04/13/2005 12:22:43 MST
+## Running 06/18/2012 08:30:19 AM
+## Command Options:
+## -warning = On
+## -information = On
+create brick x 20 y 20 z 0.125
+create cylinder height 0.125 radius 2
+body 2 move -10 -10 0
+subtract 2 from 1
+body 1 size 0.125
+surface 11 scheme pave
+mesh surface 11
+volume 1 scheme auto
+mesh volume 1
+nodeset 1 surface 14
+nodeset 2 surface 5
+nodeset 3 surface 6
+nodeset 4 surface 12
+nodeset 5 surface 10
+export abaqus "phole_20x20xeighth.inp"

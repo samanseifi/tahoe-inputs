@@ -1,0 +1,47 @@
+This is BibTeX, Version 0.99c (TeX Live 2009)
+The top-level auxiliary file: de_elec_elas_capil.aux
+The style file: model2-names.bst
+Database file #1: biball.bib
+Warning--empty title in tahoe
+You've used 55 entries,
+            2761 wiz_defined-function locations,
+            999 strings with 13931 characters,
+and the built_in function-call counts, 35333 in all, are:
+= -- 2918
+> -- 1374
+< -- 26
++ -- 545
+- -- 474
+* -- 4113
+:= -- 5368
+add.period$ -- 164
+call.type$ -- 55
+change.case$ -- 432
+chr.to.int$ -- 51
+cite$ -- 56
+duplicate$ -- 2287
+empty$ -- 2350
+format.name$ -- 683
+if$ -- 6427
+int.to.chr$ -- 5
+int.to.str$ -- 1
+missing$ -- 486
+newline$ -- 284
+num.names$ -- 220
+pop$ -- 491
+preamble$ -- 1
+purify$ -- 378
+quote$ -- 0
+skip$ -- 706
+stack$ -- 0
+substring$ -- 1933
+swap$ -- 1970
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 495
+warning$ -- 1
+while$ -- 263
+width$ -- 0
+write$ -- 776
+(There was 1 warning)
