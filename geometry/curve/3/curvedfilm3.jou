@@ -1,0 +1,20 @@
+## by Saman Seifi
+
+create surface ellipse major radius 27 minor radius 20 zplane 
+create surface ellipse major radius 23 minor radius 16 zplane 
+
+subtract 2 from 1
+webcut volume 1 yplane
+delete volume 1
+
+surface 5  size auto factor 4
+mesh surface 5
+
+nodeset 1 curve 8
+nodeset 2 curve 9
+nodeset 3 curve 10
+nodeset 4 curve 11
+
+export abaqus "curvedfilm3.inp" dimension 2 overwrite
+
+

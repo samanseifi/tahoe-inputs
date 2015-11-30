@@ -1,0 +1,22 @@
+\documentclass{minimal}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.5}
+\begin{document}
+
+\begin{tikzpicture}
+	\begin{axis}[
+		xmin=0,
+		ymin=0,
+		xlabel=$Q/({L\sqrt{\epsilon\mu}})$,
+		ylabel=$\Phi/(H\sqrt{\epsilon/\mu})$,
+		legend pos=south east,
+		legend entries={$a/b=1$,$a/b>1$,$a/b<1$,Flat film}]
+	\addplot+[mark repeat=3] table {1.dat};
+	\addplot+[mark repeat=3] table {2.dat};
+	\addplot+[mark repeat=3] table {3.dat};
+	\addplot+[mark repeat=3] table {flat.dat};
+
+	\end{axis}
+\end{tikzpicture}
+
+\end{document}
