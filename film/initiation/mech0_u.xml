@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tahoe author="hspark" compute_IC="false"
-    geometry_file="../../geometry/2x7_025.geom"
-    output_format="ExodusII" title="Dielectric Elastomer Testing" xmlns:x0="http://www.w3.org/2001/XMLSchema">
-    <time num_steps="1000000" output_inc="10" time_step="0.01">
+    geometry_file="../../geometry/2x7_025.geom" output_format="ExodusII"
+    title="Dielectric Elastomer Testing" xmlns:x0="http://www.w3.org/2001/XMLSchema">
+    <time num_steps="25000" output_inc="10" time_step="0.01">
         <schedule_function>
             <piecewise_linear>
                 <OrderedPair x="0" y="0"/>
@@ -16,9 +16,9 @@
                 <String value="D_X"/>
                 <String value="D_Y"/>
             </dof_labels>
-            <kinematic_BC dof="1" node_ID="2" schedule="1" type="u" value="-0.05"/>
+            <kinematic_BC dof="1" node_ID="2" schedule="1" type="u" value="-0.025"/>
             <kinematic_BC dof="2" node_ID="1" type="fixed"/>
-            <kinematic_BC dof="1" node_ID="4" schedule="1" type="u" value="0.05"/>
+            <kinematic_BC dof="1" node_ID="4" schedule="1" type="u" value="0.025"/>
         </field>
         <field field_name="electric_scalar_potential" integrator="static">
             <dof_labels>
@@ -37,7 +37,8 @@
             field_name="displacement" mass_type="lumped_mass">
             <quadrilateral/>
             <solid_element_nodal_output displacements="1"
-                electric_displacement="1" electric_scalar_potential="1" stress="1"/>
+                electric_displacement="1" electric_scalar_potential="1"
+                strain="1" strain_energy_density="1" stress="1"/>
             <large_strain_element_block>
                 <block_ID_list>
                     <String value="1"/>

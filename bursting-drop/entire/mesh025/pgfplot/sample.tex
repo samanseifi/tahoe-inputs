@@ -17,11 +17,14 @@
 		xlabel=$E_{top}\sqrt{\epsilon/\mu}$,
 		ylabel=$b/R_0$,
 		legend pos=north west,
-		legend entries={$\gamma=0$,$\gamma=1$,$\gamma=2$,$\gamma=5$}]
+		legend entries={$\gamma=0$,$\gamma=2$,$\gamma=5$,$\gamma=8$, $\gamma=5$,$\gamma=10$}]
 	\addplot+[mark repeat=3] table {crack/gamma0.dat};
-	\addplot+[mark repeat=3] table {crack/gamma1.dat};
+	%\addplot+[mark repeat=3] table {crack/gamma1.dat};
 	\addplot+[mark repeat=3] table {crack/gamma2.dat};
+	%\addplot+[mark repeat=3] table {crack/gamma3.dat};
+	%\addplot+[mark repeat=3] table {crack/gamma4.dat};
 	\addplot+[mark repeat=3] table {crack/gamma5.dat};
+	\addplot+[mark repeat=3] table {crack/gamma8.dat};
 	
 	\end{axis}
 \end{tikzpicture}
@@ -45,4 +48,20 @@
 %	\end{axis}
 %\end{tikzpicture}
 %\end{center}
+
+%\begin{tikzpicture}
+%	\begin{axis}[
+%		xmode=log,
+%		xmin=0.001,
+%		ymax=10,
+%		xlabel=$\gamma/(\mu H)$,
+%		ylabel=$\lambda/(H)$,
+%		legend pos=north west, 
+%		legend entries={FEM Solution,Theory for crease,Theory for wrinkle}]
+%	\addplot+[only marks] table {data/wave/W1.dat};	
+%	\addplot+[mark=none, dash pattern=on 4pt off 1pt on 4pt off 4pt] table {data/wave/W3.dat};	
+%	\addplot+[mark=none, dash pattern=on 2pt off 1pt on 2pt off 2pt] table {data/wave/W2.dat};	
+%	\end{axis} 
+%\end{tikzpicture}
+
 \end{document}
