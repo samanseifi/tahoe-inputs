@@ -44,7 +44,7 @@
                     <String value="1"/>
                 </block_ID_list>
                 <large_strain_material_2D>
-                    <Dielectric_Elastomer_Q1P02D Nrig="5.0"
+                    <Dielectric_Elastomer_Q1P02D Nrig="1000000.0"
                         density="1.0" epsilon="1.0" gamma="0.0"
                         lambda="1000.0" mu="1.0" t_0="8.0"/>
                 </large_strain_material_2D>
