@@ -1,0 +1,48 @@
+\documentclass[crop]{standalone}
+\usepackage{lmodern}
+\usepackage[latin9]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage{float}
+\usepackage{tabularx}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.5}
+\begin{document}
+
+\begin{center}
+\begin{tikzpicture}
+	\begin{axis}[
+		xmin=0,
+		ymin=0,
+		ymax=12.5,
+		xlabel=$Q/L\sqrt{\epsilon\mu}$,
+		ylabel=$\Phi/H\sqrt{\epsilon/\mu}$,
+		legend pos=north west,
+		legend entries={$\gamma/\mu l=0$,$\gamma/\mu l=5$,$\gamma/\mu l=25$,$\gamma/\mu l=125$}]
+	\addplot+[mark repeat=2] table {data/0.dat};
+	\addplot+[mark repeat=1] table {data/5.dat};
+
+	\addplot+[mark repeat=2] table {data/25.dat};
+
+	\addplot+[mark repeat=50] table {data/125.dat};
+	\end{axis}
+\end{tikzpicture}
+\end{center}
+
+%\begin{tikzpicture}
+%	\begin{axis}[
+%		xmode=log,
+%		xmin=0.001,
+%		ymax=10,
+%		xlabel=$\gamma/(\mu H)$,
+%		ylabel=$\lambda/(H)$,
+%		legend pos=north west, 
+%		legend entries={FEM Solution,Theory for crease,Theory for wrinkle}]
+%	\addplot+[only marks] table {data/wave/W1.dat};	
+%	\addplot+[mark=none, dash pattern=on 4pt off 1pt on 4pt off 4pt] table {data/wave/W3.dat};	
+%	\addplot+[mark=none, dash pattern=on 2pt off 1pt on 2pt off 2pt] table {data/wave/W2.dat};	
+%	\end{axis} 
+%\end{tikzpicture}
+
+\end{document}

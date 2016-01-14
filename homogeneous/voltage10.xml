@@ -2,7 +2,7 @@
 <tahoe author="hspark" compute_IC="false"
     geometry_file="../geometry/1x1.geom" output_format="ExodusII"
     title="Dielectric Elastomer Testing" xmlns:x0="http://www.w3.org/2001/XMLSchema">
-    <time num_steps="12500" output_inc="100" time_step="0.01">
+    <time num_steps="42100" output_inc="25" time_step="0.01">
         <schedule_function>
             <piecewise_linear>
                 <OrderedPair x="0" y="0"/>
@@ -25,7 +25,7 @@
                 <String value="Psi"/>
             </dof_labels>
             <kinematic_BC dof="1" node_ID="1" type="fixed"/>
-            <kinematic_BC dof="1" node_ID="3" schedule="1" type="u" value="0.01"/>
+            <kinematic_BC dof="1" node_ID="3" schedule="1" type="u" value="0.02"/>
         </field>
         <history_node_ID_list>
             <String value="3"/>
@@ -33,7 +33,7 @@
     </nodes>
     <element_list>
         <dielectric_elastomer_Q1P0Elastocapillary
-            electric_field_name="electric_scalar_potential" field_name="displacement">
+            electric_field_name="electric_scalar_potential" field_name="displacement" mass_type="lumped_mass">
             <quadrilateral/>
             <solid_element_nodal_output displacements="1" stress="1" electric_displacement="1" electric_scalar_potential="1"/>
             <large_strain_element_block>
