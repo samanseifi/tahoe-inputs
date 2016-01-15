@@ -3,7 +3,7 @@
 <tahoe
         author='hspark'
     compute_IC='false'
- geometry_file='../../geometry/2x7_025.geom'
+ geometry_file='../../geometry/56x16.geom'
  output_format='ExodusII'
          title='Dielectric Elastomer Testing'
       xmlns:x0='http://www.w3.org/2001/XMLSchema'>

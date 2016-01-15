@@ -4,7 +4,7 @@
               title='Dielectric Elastomer Testing'
              author='hspark'
     geometry_format='automatic'
-      geometry_file='../../geometry/2x7_025.geom'
+      geometry_file='../../geometry/56x16.geom'
       output_format='ExodusII'
  restart_output_inc='0'
          echo_input='false'
