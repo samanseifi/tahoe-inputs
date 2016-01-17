@@ -14,7 +14,8 @@
 2	9
 3	29
 4	9
-0  # number of side sets
+1  # number of side sets
+1	1	28
 # end dimensions
 *nodesets
 *set
@@ -31,6 +32,36 @@
 1  2  3  4  5  6  7  8  9  
 # end node sets
 *sidesets
+*set
+28
+197  1
+198  1
+199  1
+200  1
+201  1
+202  1
+203  1
+204  1
+205  1
+206  1
+207  1
+208  1
+209  1
+210  1
+211  1
+212  1
+213  1
+214  1
+215  1
+216  1
+217  1
+218  1
+219  1
+220  1
+221  1
+222  1
+223  1
+224  1
 *elements
 *set
 224  # number of elements

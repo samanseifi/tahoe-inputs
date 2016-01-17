@@ -57,7 +57,7 @@
                 <String value="2"/>
             </passivated_surface_ID_list>
         </dielectric_elastomer_Q1P0Elastocapillary>
-        <contact_2D_penalty field_name="displacement" penalty_stiffness="100.0">
+        <contact_2D_penalty field_name="displacement" penalty_stiffness="1000.0">
             <contact_surface>
                 <surface_side_set side_set_ID="3"/>
             </contact_surface>

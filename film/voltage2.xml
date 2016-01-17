@@ -20,9 +20,7 @@
             <kinematic_BC dof="1" node_ID="1" type="fixed"/>
             <kinematic_BC dof="2" node_ID="1" type="fixed"/>
             <kinematic_BC dof="1" node_ID="2" type="fixed"/>
-            <kinematic_BC dof="2" node_ID="2" type="fixed"/>
             <kinematic_BC dof="1" node_ID="4" type="fixed"/>
-            <kinematic_BC dof="2" node_ID="4" type="fixed"/>
         </field>
         <field field_name="electric_scalar_potential" integrator="static">
             <dof_labels>
