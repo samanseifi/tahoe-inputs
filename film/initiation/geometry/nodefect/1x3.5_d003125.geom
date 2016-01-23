@@ -15,7 +15,7 @@
 3	113
 4	33
 2  # number of side sets
-[ID]  [associate block ID]  [ns]
+#[ID]  [associate block ID]  [ns]
 1	1	32
 2	1	32
 # end dimensions

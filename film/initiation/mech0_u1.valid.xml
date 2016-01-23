@@ -2,9 +2,9 @@
 
 <tahoe
               title='Dielectric Elastomer Testing'
-             author='hspark'
+             author='samansei'
     geometry_format='automatic'
-      geometry_file='../../geometry/2x7_0125.geom'
+      geometry_file='geometry/nodefect/1x3.5_d025.geom'
       output_format='ExodusII'
  restart_output_inc='0'
          echo_input='false'
@@ -79,7 +79,7 @@
 			      dof='1'
 			     type='u'
 			 schedule='1'
-			    value='1.000000e-01'/>
+			    value='0.000000e+00'/>
 		</field>
 		<history_node_ID_list>
 			<String
@@ -116,7 +116,7 @@
 					          Nrig='1.000000e+06'
 					        lambda='1.000000e+03'
 					         gamma='0.000000e+00'
-					           t_0='8.000000e+00'/>
+					           t_0='0.000000e+00'/>
 				</large_strain_material_2D>
 			</large_strain_element_block>
 		</dielectric_elastomer_Q1P02D>
@@ -134,9 +134,6 @@
 	          quick_solve_iter='6'
 	         quick_solve_count='3'
 	                output_inc='0'>
-		<SPOOLES_matrix
-		    message_level='silent'
-		  enable_pivoting='true'
-		 always_symmetric='false'/>
+		<profile_matrix/>
 	</nonlinear_solver>
 </tahoe>

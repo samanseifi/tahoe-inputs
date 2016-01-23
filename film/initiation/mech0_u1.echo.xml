@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='US-ASCII' standalone='no' ?>
 
 <tahoe
-        author='hspark'
+        author='samansei'
     compute_IC='false'
- geometry_file='../../geometry/2x7_0125.geom'
+ geometry_file='geometry/nodefect/1x3.5_d025.geom'
  output_format='ExodusII'
          title='Dielectric Elastomer Testing'
       xmlns:x0='http://www.w3.org/2001/XMLSchema'>
@@ -65,7 +65,7 @@
 			  node_ID='3'
 			 schedule='1'
 			     type='u'
-			    value='0.1'/>
+			    value='0.00'/>
 		</field>
 		<history_node_ID_list>
 			<String
@@ -98,7 +98,7 @@
 					   gamma='0.0'
 					  lambda='1000.0'
 					      mu='1.0'
-					     t_0='8.0'/>
+					     t_0='0.0'/>
 				</large_strain_material_2D>
 			</large_strain_element_block>
 		</dielectric_elastomer_Q1P02D>
@@ -110,6 +110,6 @@
 	   divergence_tolerance='1.0e+10'
 	         max_iterations='50'
 	          rel_tolerance='1.0e-9'>
-		<SPOOLES_matrix/>
+		<profile_matrix/>
 	</nonlinear_solver>
 </tahoe>
