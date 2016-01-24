@@ -53,7 +53,7 @@
     </element_list>
     <nonlinear_solver abs_tolerance="1.0e-7"
         check_LHS_perturbation="1.0E-8" check_code="no_check"
-        divergence_tolerance="1.0e+10" max_iterations="50" rel_tolerance="1.0e-9">
-        <profile_matrix/>
+        divergence_tolerance="1.0e+10" max_iterations="500" rel_tolerance="1.0e-9">
+        <SPOOLES_matrix/>
     </nonlinear_solver>
 </tahoe>
