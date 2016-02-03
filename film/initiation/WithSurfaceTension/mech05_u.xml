@@ -16,9 +16,9 @@
                 <String value="D_X"/>
                 <String value="D_Y"/>
             </dof_labels>
-            <kinematic_BC dof="1" node_ID="2" schedule="1" type="u" value="-0.025"/>
+            <kinematic_BC dof="1" node_ID="2" schedule="1" type="u" value="-0.015"/>
             <kinematic_BC dof="2" node_ID="1" type="fixed"/>
-            <kinematic_BC dof="1" node_ID="4" schedule="1" type="u" value="0.025"/>
+            <kinematic_BC dof="1" node_ID="4" schedule="1" type="u" value="0.015"/>
         </field>
         <field field_name="electric_scalar_potential" integrator="static">
             <dof_labels>
