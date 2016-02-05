@@ -4,7 +4,7 @@
         author='samansei'
     compute_IC='false'
     echo_input='false'
- geometry_file='geometry/nodefect/1x3.5_d025.geom'
+ geometry_file='geometry/nodefect/10x70_d015625.geom'
  output_format='ExodusII'
          title='Dielectric Elastomer Testing'
       xmlns:x0='http://www.w3.org/2001/XMLSchema'>
@@ -38,7 +38,7 @@
 			  node_ID='2'
 			 schedule='1'
 			     type='u'
-			    value='-0.025'/>
+			    value='-0.15'/>
 			<kinematic_BC
 			     dof='2'
 			 node_ID='1'
@@ -48,7 +48,7 @@
 			  node_ID='4'
 			 schedule='1'
 			     type='u'
-			    value='0.025'/>
+			    value='0.15'/>
 		</field>
 		<field
 		 field_name='electric_scalar_potential'
