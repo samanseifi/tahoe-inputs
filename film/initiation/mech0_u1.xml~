@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tahoe author="samansei" compute_IC="false"
+<tahoe author="samansei" compute_IC="false" echo_input="false"
     geometry_file="geometry/nodefect/1x3.5_d025.geom" output_format="ExodusII"
     title="Dielectric Elastomer Testing" xmlns:x0="http://www.w3.org/2001/XMLSchema">
     <time num_steps="25000" output_inc="10" time_step="0.01">
@@ -53,7 +53,7 @@
     </element_list>
     <nonlinear_solver abs_tolerance="1.0e-7"
         check_LHS_perturbation="1.0E-8" check_code="no_check"
-        divergence_tolerance="1.0e+10" max_iterations="50" rel_tolerance="1.0e-9">
-        <profile_matrix/>
+        divergence_tolerance="1.0e+10" max_iterations="500" rel_tolerance="1.0e-9">
+        <SPOOLES_matrix/>
     </nonlinear_solver>
 </tahoe>

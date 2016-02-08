@@ -3,7 +3,8 @@
 <tahoe
         author='samansei'
     compute_IC='false'
- geometry_file='geometry/nodefect/1x3.5_d025.geom'
+    echo_input='false'
+ geometry_file='geometry/nodefect/10x70_d015625.geom'
  output_format='ExodusII'
          title='Dielectric Elastomer Testing'
       xmlns:x0='http://www.w3.org/2001/XMLSchema'>
@@ -37,7 +38,7 @@
 			  node_ID='2'
 			 schedule='1'
 			     type='u'
-			    value='-0.025'/>
+			    value='-0.15'/>
 			<kinematic_BC
 			     dof='2'
 			 node_ID='1'
@@ -47,7 +48,7 @@
 			  node_ID='4'
 			 schedule='1'
 			     type='u'
-			    value='0.025'/>
+			    value='0.15'/>
 		</field>
 		<field
 		 field_name='electric_scalar_potential'
@@ -108,8 +109,8 @@
 	 check_LHS_perturbation='1.0E-8'
 	             check_code='no_check'
 	   divergence_tolerance='1.0e+10'
-	         max_iterations='50'
+	         max_iterations='500'
 	          rel_tolerance='1.0e-9'>
-		<profile_matrix/>
+		<SPOOLES_matrix/>
 	</nonlinear_solver>
 </tahoe>
