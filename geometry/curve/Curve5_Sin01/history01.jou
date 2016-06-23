@@ -1,0 +1,8 @@
+#!python
+cubit.cmd('import nastran mesh geometry  "/home/saman/MEGA/PhD/Geom/Curve4_Sin1/curved_sin1.bdf" feature_angle 135.00 ')
+cubit.cmd('nodeser 1 curve 1')
+cubit.cmd('nodeset 1 curve 1')
+cubit.cmd('nodeset 2 curve 2')
+cubit.cmd('nodeset 3 curve 3')
+cubit.cmd('nodeset 4 curve 4')
+cubit.cmd('export abaqus "curvedfiln_sin01.inp" dimension 2 overwrite')
