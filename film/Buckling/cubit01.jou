@@ -1,0 +1,15 @@
+## /home/saman/Apps/Cubit/bin/clarox
+## Cubit Version 13.2
+## Cubit Build 48449
+## Revised 2012-08-02 11:48:03 -0600 (Thu, 02 Aug 2012)
+## Running 06/20/2016 02:27:37 AM
+## Command Options:
+## -warning = On
+## -information = On
+undo on
+import nastran mesh geometry "/home/saman/MEGA/PhD/Geom/Curve_Sin_2/curved_sin_2.bdf" nobcs
+nodeset 1 curve 1
+nodeset 2 curve 2
+nodeset 3 curve 3
+nodeset 4 curve 4
+export abaqus "curved_sin_2.inp" dimension 2

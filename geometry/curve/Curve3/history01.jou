@@ -1,0 +1,8 @@
+#!python
+cubit.cmd('import nastran mesh geometry  "/home/saman/MEGA/PhD/Geom/Curve3/curvedfilm3.bdf" ')
+cubit.cmd('nodeset 1 curve 1')
+cubit.cmd('nodeset 2 curve 2')
+cubit.cmd('nodeset 3 curve 3')
+cubit.cmd('nodeset 4 curve 4')
+cubit.cmd('export abaqus "curvedfilm3.inp" dimentsion 2 overwrite')
+cubit.cmd('export abaqus "curvedfilm3.inp" dimension 2 overwrite')
