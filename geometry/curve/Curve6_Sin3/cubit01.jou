@@ -1,0 +1,15 @@
+## /home/saman/Apps/Cubit/bin/clarox
+## Cubit Version 13.2
+## Cubit Build 48449
+## Revised 2012-08-02 11:48:03 -0600 (Thu, 02 Aug 2012)
+## Running 08/02/2016 08:14:08 PM
+## Command Options:
+## -warning = On
+## -information = On
+undo on
+import nastran mesh geometry "/home/saman/tahoe-inputs/geometry/curve/Curve6_Sin3/curvedfilm_sin3.bdf"
+nodeset 1 curve 1
+nodeset 2 curve 2
+nodeset 3 curve 3
+nodeset 4 curve 4
+export abaqus "curvedfilm_sin3.inp" dimension 2
